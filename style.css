@@ -12,6 +12,7 @@ main {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
     min-width: 320px;
     max-width: 800px;
+    margin: auto;
 }
 .Oculta {
     margin-top: 12px;
