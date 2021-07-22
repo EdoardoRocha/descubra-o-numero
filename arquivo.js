@@ -30,7 +30,7 @@ function apostarNumero() {
     if(numero == sorteado) {
         alert('Parabens voce acertou!!!')
         btaposta.disable = true
-        btreload.className = "exibe"
+        btreload.id = "exibe"
         outDica.textContent = ` Parabens!! Número sorteado: ${numero}`
     } else if(erros.indexOf(numero) >=0){
         alert('Você já apostou o numero:' + numero + ". Tente outro...")
@@ -48,7 +48,7 @@ function apostarNumero() {
   if(numChances == 0) {
       alert('Suas chances acabaram...')
       btaposta.disable = true
-      btreload.className = "exibe"
+      btreload.id = "exibe"
       outDica.textContent = "Game over!! Numero sorteado: " +  sorteado
   } else {
       var dica = numero < sorteado ? "Maior" : "Menor";
