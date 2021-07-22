@@ -3,7 +3,7 @@
  
  
  <p align="center"> 
- <img width="460" height="300" src="src/assets/ezgif.com-gif-maker.gif">
+ <img width="460" height="300" src="src/assets/ezgif.com-gif-maker (1).gif">
  </p>
  
  
