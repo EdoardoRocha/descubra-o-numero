@@ -5,6 +5,8 @@ var sorteado = Math.floor(Math.random()* 100) + 1
 
 const CHANCES = 6
 
+var btreload = document.getElementById('btjogar')
+
 
 function apostarNumero() {
     var inNUmero = document.getElementById('innumero')
@@ -24,10 +26,11 @@ function apostarNumero() {
     var outDica = document.getElementById('outDica')
 
 
+
     if(numero == sorteado) {
         alert('Parabens voce acertou!!!')
         btaposta.disable = true
-        btjogar.className = "Exibe"
+        btreload.className = "exibe"
         outDica.textContent = ` Parabens!! Número sorteado: ${numero}`
     } else if(erros.indexOf(numero) >=0){
         alert('Você já apostou o numero:' + numero + ". Tente outro...")
@@ -45,8 +48,8 @@ function apostarNumero() {
   if(numChances == 0) {
       alert('Suas chances acabaram...')
       btaposta.disable = true
-      btjogar.className = "Exibe"
-      outDica.textContent = "Game over!! Numero sorteado:" + sorteado
+      btreload.className = "exibe"
+      outDica.textContent = "Game over!! Numero sorteado: " +  sorteado
   } else {
       var dica = numero < sorteado ? "Maior" : "Menor";
       outDica.textContent = `Dica tente um  numero ${dica}  Que  ${numero}`
@@ -63,5 +66,4 @@ btsorteado.addEventListener('click', apostarNumero)
 function jogarDenovo() {
     location.reload()
 }
-var btreload = document.getElementById('btjogar')
 btreload.addEventListener('click', jogarDenovo)

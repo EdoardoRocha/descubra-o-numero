@@ -14,8 +14,11 @@ main {
     max-width: 800px;
     margin: auto;
 }
-.Oculta {
-    margin-top: 12px;
+.oculta {
+    display: none;
+}
+.exibe {
+    display: inline;
 }
 h1 {
     text-align: center;
