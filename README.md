@@ -7,21 +7,21 @@
  </p>
  
  
- > status: Developing ⚠️
+ > status: Concluded ✔️
  
  
  
  ## How to use this algorithm?
 
-1. First enter the payment date
-     + Remembering that the date must be before the current system date 
-3. Then enter the payment amount
-4. Finally enter the interest rate and click on the button to calculate the interest
+1. First bet a number on the input
+     + Remember that you will only have 6 chances to get it right.
+2. If you exceed the 6 chances limit the game stops and you get an end game message.
+3. Last but not least is the fact that you unlock the "Play Again" input which will restart the game and you can start over
 
 
 ## What does this algorithm consist of?
 
-Basically this algorithm consists of taking a date, an amount and an interest rate. It ends the algorithm by calculating and handing you the interest to be supposedly "Paid"
+This algorithm consists of, as soon as it is loaded, it generates a random number from 1 to 100, so you can bet any number within this limit of 6 chances, if you exceed the algorithm, it ends by releasing the "Play Again" input
 
 ## Technologies used
 
@@ -31,11 +31,13 @@ Basically this algorithm consists of taking a date, an amount and an interest ra
   <td>JavaScript</td>
   <td>HTML</td>
   <td>CSS</td>
+  <td>Bootstrap</td>
  </tr>
  <tr> 
   <td> ECMAS v8.0</td>
   <td> v5.0 </td>
   <td>v3.0</td>
+  <td>v4.1.3</td>
  </tr>
 </table>
 
